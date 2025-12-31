@@ -7,7 +7,8 @@ A modern, minimal, and attractive portfolio website for Aniket Shah, a Junior Pr
 - **React** - UI library
 - **TypeScript** - Type safety
 - **Vite** - Build tool and dev server
-- **CSS3** - Styling with custom properties
+- **Tailwind CSS** - Utility-first CSS framework
+- **PostCSS** - CSS processing
 
 ## 📁 Project Structure
 
@@ -96,7 +97,14 @@ To customize the portfolio for your own use:
    - Add your resume PDF to `public/` directory
    - Update the filename in `src/components/sections/Hero.tsx`
 
-3. Customize colors in `src/index.css` by modifying CSS variables
+3. Customize colors in `tailwind.config.js` by modifying the theme colors
+
+## 🎨 Tailwind CSS
+
+This project uses Tailwind CSS v4 for styling. The configuration can be found in:
+- `tailwind.config.js` - Theme customization (colors, fonts, animations)
+- `postcss.config.js` - PostCSS plugin configuration
+- `src/index.css` - Base styles and custom CSS variables
 
 ## 📄 License
 
@@ -111,4 +119,4 @@ This project is open source and available under the MIT License.
 
 ---
 
-Built with ❤️ using React + TypeScript + Vite
+Built with ❤️ using React + TypeScript + Vite + Tailwind CSS
