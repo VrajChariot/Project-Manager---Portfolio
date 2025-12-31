@@ -1,73 +1,114 @@
-# React + TypeScript + Vite
+# Aniket Shah - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, minimal, and attractive portfolio website for Aniket Shah, a Junior Project Manager actively seeking new opportunities.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** - UI library
+- **TypeScript** - Type safety
+- **Vite** - Build tool and dev server
+- **CSS3** - Styling with custom properties
 
-## React Compiler
+## 📁 Project Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+├── components/
+│   ├── common/          # Reusable components (Header, Footer)
+│   └── sections/        # Page sections (Hero, About, Skills, Projects, Contact)
+├── types/               # TypeScript type definitions
+├── assets/              # Images and documents
+│   ├── images/
+│   └── documents/
+├── App.tsx              # Main application component
+├── App.css              # Global app styles
+├── index.css            # Base styles and CSS variables
+└── main.tsx             # Application entry point
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🎨 Features
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Hero Section**: Eye-catching introduction with call-to-action buttons
+- **About Section**: Professional overview with key highlights
+- **Skills Section**: Comprehensive display of project management, technical, and soft skills
+- **Projects Section**: Showcase of 4 featured projects with outcomes
+- **Contact Form**: Interactive contact form for inquiries
+- **Resume Download**: Quick access to downloadable resume
+- **Social Links**: Connect via LinkedIn, GitHub, Twitter, and Email
+- **Responsive Design**: Mobile-friendly layout
+- **Smooth Navigation**: Sticky header with smooth scrolling
+- **Modern UI**: Clean, professional design with modern aesthetics
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Getting Started
+
+### Prerequisites
+
+- Node.js 16+ 
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/VrajChariot/Project-Manager---Portfolio.git
+cd Project-Manager---Portfolio
 ```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Start development server
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:5173/`
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+The built files will be in the `dist/` directory.
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+## 📝 Customization
+
+To customize the portfolio for your own use:
+
+1. Update personal information in the component files:
+   - `src/components/sections/Hero.tsx` - Name and introduction
+   - `src/components/sections/About.tsx` - About me text
+   - `src/components/sections/Skills.tsx` - Skills list
+   - `src/components/sections/Projects.tsx` - Project details
+   - `src/components/sections/Contact.tsx` - Contact information
+   - `src/components/common/Footer.tsx` - Social media links
+
+2. Replace the resume PDF:
+   - Add your resume PDF to `public/` directory
+   - Update the filename in `src/components/sections/Hero.tsx`
+
+3. Customize colors in `src/index.css` by modifying CSS variables
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 👤 Author
+
+**Aniket Shah**
+- Role: Junior Project Manager
+- Email: aniket.shah@example.com
+- LinkedIn: [linkedin.com/in/aniketshah](https://linkedin.com/in/aniketshah)
+
+---
+
+Built with ❤️ using React + TypeScript + Vite

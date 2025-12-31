@@ -1,4 +1,4 @@
-import { SocialLink } from '../../types';
+import type { SocialLink } from '../../types';
 import './Footer.css';
 
 const Footer = () => {

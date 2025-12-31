@@ -1,5 +1,5 @@
-import { useState, FormEvent } from 'react';
-import { ContactFormData } from '../../types';
+import { useState, type FormEvent } from 'react';
+import type { ContactFormData } from '../../types';
 import './Contact.css';
 
 const Contact = () => {
