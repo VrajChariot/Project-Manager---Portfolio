@@ -1,5 +1,4 @@
 import type { Project } from '../../types';
-import './Projects.css';
 
 const Projects = () => {
   const projects: Project[] = [
@@ -58,37 +57,51 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="projects section">
+    <section id="projects" className="section bg-slate-50">
       <div className="container">
         <h2 className="section-title">Featured Projects</h2>
         <p className="section-subtitle">
           Showcasing successful project deliveries and achievements
         </p>
 
-        <div className="projects-grid">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((project) => (
-            <div key={project.id} className="project-card">
-              <div className="project-header">
-                <h3 className="project-title">{project.title}</h3>
-                <div className="project-meta">
-                  <span className="project-duration">{project.duration}</span>
-                  <span className="project-role">{project.role}</span>
+            <div key={project.id} className="bg-white rounded-xl p-8 shadow-sm border border-gray-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:border-primary flex flex-col gap-6">
+              <div className="flex flex-col gap-3">
+                <h3 className="text-2xl text-slate-800 m-0">{project.title}</h3>
+                <div className="flex gap-4 flex-wrap">
+                  <span className="text-sm px-3.5 py-1.5 rounded-md font-medium bg-slate-100 text-secondary">
+                    {project.duration}
+                  </span>
+                  <span className="text-sm px-3.5 py-1.5 rounded-md font-medium bg-primary/10 text-primary">
+                    {project.role}
+                  </span>
                 </div>
               </div>
 
-              <p className="project-description">{project.description}</p>
+              <p className="text-base leading-relaxed text-secondary m-0">
+                {project.description}
+              </p>
 
-              <div className="project-technologies">
+              <div className="flex gap-2 flex-wrap">
                 {project.technologies.map((tech, index) => (
-                  <span key={index} className="tech-tag">{tech}</span>
+                  <span 
+                    key={index} 
+                    className="bg-slate-100 text-secondary px-3.5 py-1.5 rounded-md text-sm font-medium border border-gray-200 transition-all duration-200 hover:border-primary hover:text-primary"
+                  >
+                    {tech}
+                  </span>
                 ))}
               </div>
 
-              <div className="project-outcomes">
-                <h4>Key Outcomes:</h4>
-                <ul>
+              <div className="mt-auto">
+                <h4 className="text-base text-slate-800 mb-3">Key Outcomes:</h4>
+                <ul className="list-none flex flex-col gap-2">
                   {project.outcomes.map((outcome, index) => (
-                    <li key={index}>{outcome}</li>
+                    <li key={index} className="text-secondary text-sm flex items-start gap-2">
+                      <span className="text-green-500 font-bold text-lg flex-shrink-0">✓</span>
+                      <span>{outcome}</span>
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -101,3 +114,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
