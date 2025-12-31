@@ -22,6 +22,11 @@ const Header = () => {
     }
   };
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    e.preventDefault();
+    scrollToSection(sectionId);
+  };
+
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container header-content">
@@ -30,10 +35,10 @@ const Header = () => {
         </div>
         
         <nav className={`nav ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
-          <a onClick={() => scrollToSection('about')}>About</a>
-          <a onClick={() => scrollToSection('skills')}>Skills</a>
-          <a onClick={() => scrollToSection('projects')}>Projects</a>
-          <a onClick={() => scrollToSection('contact')}>Contact</a>
+          <a href="#about" onClick={(e) => handleNavClick(e, 'about')}>About</a>
+          <a href="#skills" onClick={(e) => handleNavClick(e, 'skills')}>Skills</a>
+          <a href="#projects" onClick={(e) => handleNavClick(e, 'projects')}>Projects</a>
+          <a href="#contact" onClick={(e) => handleNavClick(e, 'contact')}>Contact</a>
         </nav>
 
         <button 

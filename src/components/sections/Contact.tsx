@@ -15,7 +15,7 @@ const Contact = () => {
     e.preventDefault();
     
     // In a real application, you would send this data to a backend
-    console.log('Form submitted:', formData);
+    // For now, just show success message
     
     // Show success message
     setIsSubmitted(true);
