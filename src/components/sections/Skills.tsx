@@ -32,12 +32,12 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="section bg-gradient-to-br from-white via-slate-50 to-blue-50/40 py-24 relative overflow-hidden"
+      className="section bg-linear-to-br from-white via-slate-50 to-blue-50/40 py-24 relative overflow-hidden"
     >
       {/* Decorative animated orbs */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-200/30 rounded-full blur-3xl animate-pulse-slow"></div>
+      <div className="absolute top-0 right-0 w-125 h-125 bg-blue-200/30 rounded-full blur-3xl animate-pulse-slow"></div>
       <div
-        className="absolute bottom-0 left-1/4 w-[400px] h-[400px] bg-slate-200/30 rounded-full blur-3xl animate-pulse-slow"
+        className="absolute bottom-0 left-1/4 w-100 h-100 bg-slate-200/30 rounded-full blur-3xl animate-pulse-slow"
         style={{ animationDelay: "1.5s" }}
       ></div>
 
@@ -60,7 +60,7 @@ const Skills = () => {
               {methodologies.map((item, index) => (
                 <div
                   key={index}
-                  className="px-6 py-3 rounded-lg bg-gradient-to-br from-blue-50 to-blue-100/50 border border-blue-200/60 text-slate-900 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 flex items-center gap-2 group"
+                  className="px-6 py-3 rounded-lg bg-linear-to-br from-blue-50 to-blue-100/50 border border-blue-200/60 text-slate-900 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 flex items-center gap-2 group"
                 >
                   <span className="text-xl group-hover:scale-110 transition-transform duration-300">
                     {item.icon}
@@ -80,7 +80,7 @@ const Skills = () => {
               {tools.map((item, index) => (
                 <div
                   key={index}
-                  className="px-6 py-3 rounded-lg bg-gradient-to-br from-slate-100 to-slate-200/50 border border-slate-300/60 text-slate-900 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 flex items-center gap-2 group"
+                  className="px-6 py-3 rounded-lg bg-linear-to-br from-slate-100 to-slate-200/50 border border-slate-300/60 text-slate-900 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 flex items-center gap-2 group"
                 >
                   <span className="text-xl group-hover:scale-110 transition-transform duration-300">
                     {item.icon}
@@ -100,7 +100,7 @@ const Skills = () => {
               {softSkills.map((skill, index) => (
                 <div
                   key={index}
-                  className="px-5 py-2.5 rounded-lg bg-gradient-to-br from-blue-100/80 to-blue-50 border border-blue-200/50 text-slate-800 text-sm font-medium shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"
+                  className="px-5 py-2.5 rounded-lg bg-linear-to-br from-blue-100/80 to-blue-50 border border-blue-200/50 text-slate-800 text-sm font-medium shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"
                 >
                   {skill}
                 </div>

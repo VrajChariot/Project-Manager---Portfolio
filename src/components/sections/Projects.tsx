@@ -63,12 +63,12 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="section bg-gradient-to-br from-slate-50 via-white to-blue-50/30 relative overflow-hidden"
+      className="section bg-linear-to-br from-slate-50 via-white to-blue-50/30 relative overflow-hidden"
     >
       {/* Decorative background elements */}
-      <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-blue-100/20 rounded-full blur-3xl animate-pulse-slow"></div>
+      <div className="absolute top-0 right-1/4 w-125 h-125 bg-blue-100/20 rounded-full blur-3xl animate-pulse-slow"></div>
       <div
-        className="absolute bottom-0 left-1/4 w-[400px] h-[400px] bg-slate-100/20 rounded-full blur-3xl animate-pulse-slow"
+        className="absolute bottom-0 left-1/4 w-100 h-100 bg-slate-100/20 rounded-full blur-3xl animate-pulse-slow"
         style={{ animationDelay: "1s" }}
       ></div>
 
@@ -84,7 +84,7 @@ const Projects = () => {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="bg-gradient-to-br from-white to-blue-50/50 rounded-xl p-8 shadow-md border border-blue-100/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-200 flex flex-col gap-6 group"
+              className="bg-linear-to-br from-white to-blue-50/50 rounded-xl p-8 shadow-md border border-blue-100/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-200 flex flex-col gap-6 group"
             >
               <div className="flex flex-col gap-3">
                 <h3 className="text-2xl text-slate-800 m-0 group-hover:text-blue-600 transition-colors">
@@ -94,7 +94,7 @@ const Projects = () => {
                   <span className="text-sm px-3.5 py-1.5 rounded-md font-medium bg-slate-100 text-slate-700">
                     {project.duration}
                   </span>
-                  <span className="text-sm px-3.5 py-1.5 rounded-md font-medium bg-gradient-to-r from-blue-100 to-blue-50 text-blue-600">
+                  <span className="text-sm px-3.5 py-1.5 rounded-md font-medium bg-linear-to-r from-blue-100 to-blue-50 text-blue-600">
                     {project.role}
                   </span>
                 </div>
@@ -123,7 +123,7 @@ const Projects = () => {
                       key={index}
                       className="text-secondary text-sm flex items-start gap-2"
                     >
-                      <span className="text-green-500 font-bold text-lg flex-shrink-0">
+                      <span className="text-green-500 font-bold text-lg shrink-0">
                         ✓
                       </span>
                       <span>{outcome}</span>

@@ -47,9 +47,9 @@ const Contact = () => {
       className="section bg-linear-to-br from-white via-slate-50 to-blue-50/40 py-24 relative overflow-hidden"
     >
       {/* Decorative animated orbs */}
-      <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-blue-200/30 rounded-full blur-3xl animate-pulse-slow"></div>
+      <div className="absolute top-0 left-1/4 w-125 h-125 bg-blue-200/30 rounded-full blur-3xl animate-pulse-slow"></div>
       <div
-        className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-slate-200/30 rounded-full blur-3xl animate-pulse-slow"
+        className="absolute bottom-0 right-1/4 w-100 h-100 bg-slate-200/30 rounded-full blur-3xl animate-pulse-slow"
         style={{ animationDelay: "1.5s" }}
       ></div>
 
@@ -117,7 +117,7 @@ const Contact = () => {
               </div>
 
               <div
-                className="p-5 bg-gradient-to-br from-green-100/70 to-emerald-100/50 rounded-lg border border-green-300/60"
+                className="p-5 bg-linear-to-br from-green-100/70 to-emerald-100/50 rounded-lg border border-green-300/60"
                 style={{
                   animation: "borderPulse 4s ease-in-out infinite",
                 }}

@@ -147,12 +147,12 @@ const Hero = () => {
 
             <div className="flex gap-4 flex-wrap items-center">
               <button
-                onClick={scrollToContact}
+                onClick={downloadResume}
                 className="group px-7 py-3 rounded-md text-base font-medium bg-slate-900 text-white transition-all duration-300 hover:bg-slate-800 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-slate-900/20 flex items-center gap-2"
               >
-                View My Work
+                Download Resume
                 <svg
-                  className="w-4 h-4 transition-transform group-hover:translate-x-1"
+                  className="w-4 h-4"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -161,7 +161,7 @@ const Hero = () => {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                   />
                 </svg>
               </button>
