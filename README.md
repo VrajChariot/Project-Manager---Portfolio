@@ -112,10 +112,9 @@ This project is open source and available under the MIT License.
 
 ## 👤 Author
 
-**Aniket Shah**
-- Role: Junior Project Manager
-- Email: aniket.shah@example.com
-- LinkedIn: [linkedin.com/in/aniketshah](https://linkedin.com/in/aniketshah)
+**Vraj Shah**
+- Email: Vraj0410shah@gmail.com
+- LinkedIn: [linkedin.com/in/vrajshah04](https://www.linkedin.com/in/vrajshah04/)
 
 ---
 
